@@ -1,0 +1,37 @@
+/* Container transition */
+.auth-container {
+  transition: background-color 0.3s ease;
+}
+
+/* Dark mode transition when hovering over auth card */
+.auth-container:has(.hover-glow:hover) {
+  background-color: rgba(17, 24, 39, 0.95);
+}
+
+/* Logo transition */
+.main-logo {
+  transition: opacity 0.3s ease;
+}
+
+.auth-container:has(.hover-glow:hover) .main-logo {
+  content: url("https://gzmtrshdgzvesatsndrh.supabase.co/storage/v1/object/public/AppAssets/KaviarW.svg");
+}
+
+/* Text transitions */
+.logo-text {
+  transition: color 0.3s ease;
+}
+
+.auth-container:has(.hover-glow:hover) .logo-text {
+  color: white;
+}
+
+/* Heart emoji animation */
+.heart-emoji {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.auth-container:has(.hover-glow:hover) .heart-emoji {
+  transform: scale(1.1);
+}
